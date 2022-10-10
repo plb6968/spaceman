@@ -7,7 +7,7 @@ body {
     margin: 0;
     font-family: Arial, Helvetica, sans-serif;
     display: grid;
-    grid-template-columns: 1fr .75fr 1fr 1fr 1fr 1fr;
+    grid-template-columns: 1fr .25fr 1fr 1fr 1fr 1fr;
     grid-template-rows: 1fr .6fr .4fr;
     grid-template-areas: 
                 "man man main main avail avail"
@@ -20,6 +20,8 @@ main {
     display: flex;
     flex-direction: column;
     align-items: center;
+    border-top: .3rem solid rgb(54, 53, 60);
+    color: rgb(54, 53, 60)
 }
 #gameName {
     font-size: 50px;
@@ -33,6 +35,7 @@ main {
     border: .2rem solid;
     padding: 5px;
     border-radius: 10px;
+    color: rgb(54, 53, 60);
 }
 
 #correctLetters {
@@ -41,28 +44,50 @@ main {
     justify-content: space-evenly;
     align-items: flex-end;
     font-size: 40px;
-    margin: 10px
+    margin: 10px;
+    color: rgb(54, 53, 60);
 }
 
 #spcMan {
     grid-area: man;
+    border-top: .3rem solid rgb(54, 53, 60);
+    border-left: .3rem solid rgb(54, 53, 60);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+img {
+    display: flex;
+    width: 100%;
+
 }
 
 #availLetters {
     grid-area: avail;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-evenly;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    text-align: center;
+    align-items: center;
     font-size: 50px;
+    border: .3rem solid rgb(54, 53, 60);
+    color: rgb(54, 53, 60);
 }
 
 #plyAgain {
     grid-area: ply;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: .3rem solid rgb(54, 53, 60);
+    border-right: none;
 }
 
 #incorrectLtrs {
     grid-area: inc;
+    border: .3rem solid rgb(54, 53, 60);
+    border-right: none;
+    color: rgb(54, 53, 60);
 }
 
 
