@@ -1,0 +1,70 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    display: grid;
+    grid-template-columns: 1fr .75fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr .6fr .4fr;
+    grid-template-areas: 
+                "man man main main avail avail"
+                "man man crt crt avail avail"
+                "ply inc inc inc avail avail"
+}
+
+main {
+    grid-area: main;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+#gameName {
+    font-size: 50px;
+    padding: 5px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+#msgBox {
+    font-size: 35px;
+    border: .2rem solid;
+    padding: 5px;
+    border-radius: 10px;
+}
+
+#correctLetters {
+    grid-area: crt;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: flex-end;
+    font-size: 40px;
+    margin: 10px
+}
+
+#spcMan {
+    grid-area: man;
+}
+
+#availLetters {
+    grid-area: avail;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    font-size: 50px;
+}
+
+#plyAgain {
+    grid-area: ply;
+}
+
+#incorrectLtrs {
+    grid-area: inc;
+}
+
+
+
+

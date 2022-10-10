@@ -1,13 +1,20 @@
+
 /*----- constants -----*/
 
 
-  /*----- state variables -----*/
+ 
+/*----- state variables -----*/
+
+let winner;
+let piecesRemain;
+let piecesUsed;
+let correctPeices;
 
 
-  /*----- cached elements  -----*/
+/*----- cached elements  -----*/
 
 
-  /*----- event listeners -----*/
+/*----- event listeners -----*/
 
 
-  /*----- functions -----*/
+/*----- functions -----*/
