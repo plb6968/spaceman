@@ -32,6 +32,7 @@ main {
 
 #msgBox {
     font-size: 35px;
+    text-align: center;
     border: .2rem solid;
     padding: 5px;
     border-radius: 10px;
