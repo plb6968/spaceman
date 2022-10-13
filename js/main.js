@@ -109,7 +109,7 @@ function renderMove() {
 
 function renderMessage() {
     if(checkForWinner() === true) {
-        msgBox.innerText = 'Conratulations, YOU WON';
+        msgBox.innerText = 'Congratulations, YOU WON';
         winSound.play();
     }
     if(checkForLoser() === true) {
