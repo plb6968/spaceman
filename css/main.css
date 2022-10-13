@@ -25,16 +25,19 @@ main {
 }
 #gameName {
     font-size: 50px;
+    margin-left: 7px;
     padding: 5px;
     padding-left: 20px;
     padding-right: 20px;
 }
 
+
 #msgBox {
     font-size: 35px;
     text-align: center;
     border: .2rem solid;
-    padding: 5px;
+    padding: 10px;
+    margin: 7px;
     border-radius: 10px;
     color: rgb(54, 53, 60);
     background-color: rgb(242, 188, 85);
