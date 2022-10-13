@@ -1,18 +1,24 @@
 
 /*----- constants -----*/
 
-wordsArr = ['adult', 'anger', 'agree', 
-'aline', 'begin', 'brave',
-'child', 'class', 'clock', 
-'dance', 'dream', 'drive',
-'earth', 'entry', 'event',
-'feild', 'faith', 'focus',
-'glass', 'group', 'green',
-'index', 'input', 'judge',
-'level', 'model', 'novel',
-'order', 'peace', 'queen',
-'radio', 'scope', 'title',
-'unity', 'value', 'while'];
+const correctSound = new Audio('sounds/correct-guess.wav');
+const wrongSound = new Audio('sounds/wrong-guess.wav');
+const loseSound = new Audio('sounds/game-lost.wav');
+const winSound = new Audio('sounds/game-win.wav');
+
+ const wordsArr = [
+    'adult', 'anger', 'agree', 
+    'aline', 'begin', 'brave',
+    'child', 'class', 'clock', 
+    'dance', 'dream', 'drive',
+    'earth', 'entry', 'event',
+    'feild', 'faith', 'focus',
+    'glass', 'group', 'green',
+    'index', 'input', 'judge',
+    'level', 'model', 'novel',
+    'order', 'peace', 'queen',
+    'radio', 'scope', 'title',
+    'unity', 'value', 'while'];
 
 /*----- state variables -----*/
 
@@ -21,16 +27,17 @@ let curWord; // contains array of each letter from randWord.
 let currentSelect; //contains current letter, selected by the event listener. 
 let wrongGuess; // contatins the remaining turns before player loses. 
 let correctGuess; //contains array of correct letters chosen by user. 
-let wrongLtrs; // contains the letter of a wrong selection
 let isWinner;
 let isLoser;
 
 /*----- cached elements  -----*/
+
 let msgBox = document.getElementById('msgBox');
 let correctLetters = document.getElementById('correctLetters');
 let spaceman = document.getElementById('spaceman');
-wrongLtrs = document.getElementById('incLtrList');
+let wrongLtrs = document.getElementById('incLtrList');
 let letters = document.getElementsByClassName('aLetters');
+let lostMsg = document.getElementById('lost-message');
 
 
 /*----- event listeners -----*/
@@ -79,6 +86,7 @@ function renderMove() {
             document.getElementById(`${idx}`).style.display = 'grid';
             document.getElementById(`${idx}`).style.gridArea = `1 / ${idx + 1}`;
             msgBox.innerText = 'CORRECT GUESS';
+            correctSound.play();
             correctGuess += 1;
            }    
        });
@@ -92,25 +100,29 @@ function renderMove() {
         msgBox.style.fontSize = '30px';
         wrongGuess += 1;
         spaceman.src = `img/spaceman-${wrongGuess}.jpg`;
-        console.log(wrongGuess);
+        wrongSound.play();
     }
     renderMessage();
     
     document.getElementById(`${currentSelect.innerText}`).style.visibility = 'hidden';
 }
 
-
 function renderMessage() {
     if(checkForWinner() === true) {
         msgBox.innerText = 'Conratulations, YOU WON';
+        winSound.play();
     }
     if(checkForLoser() === true) {
         msgBox.innerText = 'YOU LOST,  Try again'
+        lostMsg.innerText = `CORRECT WORD: ${randWord.toUpperCase()}`
+        lostMsg.style.visibility = 'visible';
+        loseSound.play() 
     }
 }
 
 function renderBoard() {
     spaceman.src = `img/spaceman-${wrongGuess}.jpg`
+    lostMsg.style.visibility = 'hidden'
     correctLetters.innerHTML = null;
     wrongLtrs.innerText = '';
     for (i = 0; i < letters.length; i++) {
@@ -125,7 +137,6 @@ function renderBoard() {
     })
     
     msgBox.innerText = 'GUESS A LETTER';
-
 }
 
 // Choose a random word, from wordsArr, and return value. 
