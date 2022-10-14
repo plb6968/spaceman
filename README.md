@@ -3,7 +3,7 @@ Spaceman is a word guessing game, where the player has a limited amount of singl
  after the guesses are exhausted the player has lost.  If the player has guessed every letter of the word
 the game is one.
 
-Play the game here: [Spaceman}(https://plb6968.github.io/spaceman/)
+Play the game here: [Spaceman](https://plb6968.github.io/spaceman/)
 
 I chose a simple layout and design that would be easy to understand and work efficiently.  
 I remember playing games like this in elementary school as an educational tool.  these games always had a simple 
