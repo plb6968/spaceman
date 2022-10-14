@@ -1,4 +1,4 @@
-# spaceman
+# Spaceman
 Spaceman is a word guessing game, where the player has a limited amount of single letter guesses, 
 after the guesses are exhausted the player has lost.  If the player has guessed every letter of the word
 the game is one. 
@@ -10,7 +10,7 @@ complex for a younger audience.
 
 ![Screen Shot 2022-10-13 at 8 32 10 PM](https://user-images.githubusercontent.com/114373806/195741673-17b0f0d7-fea4-4fe2-9595-34e18a0847ae.png)
 
-# function
+# Function
 The play is prompted to choose a letter,  after choosing that letter it will dissapear from the 
 letters area, either the letter is added to the correct letters area.  If the letter was incorrect the game
 will remove one part of the spacemans body.  Once all body parts are gone the game is lost.  
