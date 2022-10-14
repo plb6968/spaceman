@@ -1,7 +1,9 @@
 # Spaceman
 Spaceman is a word guessing game, where the player has a limited amount of single letter guesses, 
  after the guesses are exhausted the player has lost.  If the player has guessed every letter of the word
-the game is one. 
+the game is one.
+
+Play the game here: [Spaceman}(https://plb6968.github.io/spaceman/)
 
 I chose a simple layout and design that would be easy to understand and work efficiently.  
 I remember playing games like this in elementary school as an educational tool.  these games always had a simple 
@@ -15,6 +17,9 @@ letters area, either the letter is added to the correct letters area.  If the le
 will remove one part of the spacemans body.  Once all body parts are gone the game is lost.  
 
 ![Screen Shot 2022-10-13 at 8 38 45 PM](https://user-images.githubusercontent.com/114373806/195742366-9f4764d7-594a-45a1-a812-9dc2145bd264.png)
+
+# Technologies
+I used HTML, CSS, and javascript to creat this game.  
 
 # Future additions
 Give the player an option to choose a difficulty level between easy, medium and hard.  Easy would 5 letter 
