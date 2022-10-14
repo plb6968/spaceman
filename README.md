@@ -19,7 +19,7 @@ will remove one part of the spacemans body.  Once all body parts are gone the ga
 ![Screen Shot 2022-10-13 at 8 38 45 PM](https://user-images.githubusercontent.com/114373806/195742366-9f4764d7-594a-45a1-a812-9dc2145bd264.png)
 
 # Technologies
-I used HTML, CSS, and javascript to creat this game.  
+I used HTML, CSS, and javascript to create this game.  
 
 # Future additions
 Give the player an option to choose a difficulty level between easy, medium and hard.  Easy would 5 letter 
