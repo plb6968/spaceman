@@ -1,12 +1,11 @@
 # Spaceman
 Spaceman is a word guessing game, where the player has a limited amount of single letter guesses, 
-after the guesses are exhausted the player has lost.  If the player has guessed every letter of the word
+ after the guesses are exhausted the player has lost.  If the player has guessed every letter of the word
 the game is one. 
 
 I chose a simple layout and design that would be easy to understand and work efficiently.  
 I remember playing games like this in elementary school as an educational tool.  these games always had a simple 
-block based layout with simple colors.  I also chose to use five letter words, so that the words would not be to 
-complex for a younger audience.  
+block based layout with simple colors.  I also chose to use five letter words, so that the words would not be to complex for a younger audience.  
 
 ![Screen Shot 2022-10-13 at 8 32 10 PM](https://user-images.githubusercontent.com/114373806/195741673-17b0f0d7-fea4-4fe2-9595-34e18a0847ae.png)
 
