@@ -1,0 +1,28 @@
+Spaceman pseudo-code:
+
+1. create an array of five letter words
+2. randomly choose a word from the five letter word array.
+3. have the 5 spots on the board linked to the letters of the 
+	randomly chosen word, in correct order.  (do not display letters)
+
+4. prompt the user to choose a letter from the letters available
+5.  if the letter chosen is part of the word -> 
+	render the letter to the correct spot on the board.
+	remove letter from the available letters box.  
+6.  if the letter chosen is not part of the word -> 
+	render the letter to the incorrect letters box. 
+	remove one piece from the spaceman image. 
+	remove letter from the available letters box. 
+
+7. Test to see if pieces of spaceman remain on board. 
+	if pieces of spaceman remain -> continue game.
+	
+	if no pieces remain -> game is lost. 
+
+8. Test for win
+	if all letters from randomly chosen word are chosen -> Winner!
+
+	if all letters from randomly chosen word have not been chosen ->
+		continue game. 
+
+	
